@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="sfdcsuite" duration-ms="109332" started-at="2019-07-18T18:27:43Z" finished-at="2019-07-18T18:29:33Z">
+  <suite name="sfdcsuite" duration-ms="132979" started-at="2019-07-18T22:58:29Z" finished-at="2019-07-18T23:00:42Z">
     <groups>
     </groups>
-    <test name="testngTest" duration-ms="109332" started-at="2019-07-18T18:27:43Z" finished-at="2019-07-18T18:29:33Z">
+    <test name="testngTest" duration-ms="132979" started-at="2019-07-18T22:58:29Z" finished-at="2019-07-18T23:00:42Z">
       <class name="Salesforce.sdfc.AutomationTest">
-        <test-method status="PASS" signature="TC1_login()[pri:0, instance:Salesforce.sdfc.AutomationTest@134593bf]" name="TC1_login" duration-ms="24920" started-at="2019-07-18T18:27:43Z" finished-at="2019-07-18T18:28:08Z">
+        <test-method status="PASS" signature="TC1_login()[pri:0, instance:Salesforce.sdfc.AutomationTest@1068e947]" name="TC1_login" duration-ms="32612" started-at="2019-07-18T22:58:29Z" finished-at="2019-07-18T22:59:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC1_login -->
-        <test-method status="PASS" signature="TC2_loginError()[pri:0, instance:Salesforce.sdfc.AutomationTest@134593bf]" name="TC2_loginError" duration-ms="21249" started-at="2019-07-18T18:28:08Z" finished-at="2019-07-18T18:28:29Z">
+        <test-method status="PASS" signature="TC2_loginError()[pri:0, instance:Salesforce.sdfc.AutomationTest@1068e947]" name="TC2_loginError" duration-ms="22909" started-at="2019-07-18T22:59:02Z" finished-at="2019-07-18T22:59:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC2_loginError -->
-        <test-method status="PASS" signature="TC3_CheckRememberme()[pri:0, instance:Salesforce.sdfc.AutomationTest@134593bf]" name="TC3_CheckRememberme" duration-ms="24845" started-at="2019-07-18T18:28:29Z" finished-at="2019-07-18T18:28:54Z">
+        <test-method status="PASS" signature="TC3_CheckRememberme()[pri:0, instance:Salesforce.sdfc.AutomationTest@1068e947]" name="TC3_CheckRememberme" duration-ms="26083" started-at="2019-07-18T22:59:25Z" finished-at="2019-07-18T22:59:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC3_CheckRememberme -->
-        <test-method status="PASS" signature="launchUrl()[pri:0, instance:Salesforce.sdfc.AutomationTest@134593bf]" name="launchUrl" duration-ms="10236" started-at="2019-07-18T18:28:54Z" finished-at="2019-07-18T18:29:05Z">
+        <test-method status="PASS" signature="launchUrl()[pri:0, instance:Salesforce.sdfc.AutomationTest@1068e947]" name="launchUrl" duration-ms="14812" started-at="2019-07-18T22:59:51Z" finished-at="2019-07-18T23:00:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchUrl -->
-        <test-method status="PASS" signature="login()[pri:0, instance:Salesforce.sdfc.AutomationTest@134593bf]" name="login" duration-ms="27110" started-at="2019-07-18T18:29:05Z" finished-at="2019-07-18T18:29:32Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:Salesforce.sdfc.AutomationTest@1068e947]" name="login" duration-ms="35489" started-at="2019-07-18T23:00:06Z" finished-at="2019-07-18T23:00:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="logger()[pri:0, instance:Salesforce.sdfc.AutomationTest@134593bf]" name="logger" is-config="true" duration-ms="909" started-at="2019-07-18T18:29:32Z" finished-at="2019-07-18T18:29:33Z">
+        <test-method status="PASS" signature="logger()[pri:0, instance:Salesforce.sdfc.AutomationTest@1068e947]" name="logger" is-config="true" duration-ms="1024" started-at="2019-07-18T23:00:41Z" finished-at="2019-07-18T23:00:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logger -->
