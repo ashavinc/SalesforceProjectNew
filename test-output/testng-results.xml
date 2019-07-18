@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="98768" started-at="2019-07-18T18:36:24Z" finished-at="2019-07-18T18:38:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="98768" started-at="2019-07-18T18:36:24Z" finished-at="2019-07-18T18:38:02Z">
+      <class name="Salesforce.sdfc.AutomationTest">
+        <test-method status="PASS" signature="TC1_login()[pri:0, instance:Salesforce.sdfc.AutomationTest@64d2d351]" name="TC1_login" duration-ms="16371" started-at="2019-07-18T18:36:24Z" finished-at="2019-07-18T18:36:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_login -->
+        <test-method status="PASS" signature="TC2_loginError()[pri:0, instance:Salesforce.sdfc.AutomationTest@64d2d351]" name="TC2_loginError" duration-ms="19998" started-at="2019-07-18T18:36:40Z" finished-at="2019-07-18T18:37:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC2_loginError -->
+        <test-method status="PASS" signature="TC3_CheckRememberme()[pri:0, instance:Salesforce.sdfc.AutomationTest@64d2d351]" name="TC3_CheckRememberme" duration-ms="29743" started-at="2019-07-18T18:37:00Z" finished-at="2019-07-18T18:37:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC3_CheckRememberme -->
+        <test-method status="PASS" signature="launchUrl()[pri:0, instance:Salesforce.sdfc.AutomationTest@64d2d351]" name="launchUrl" duration-ms="9598" started-at="2019-07-18T18:37:30Z" finished-at="2019-07-18T18:37:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method status="PASS" signature="login()[pri:0, instance:Salesforce.sdfc.AutomationTest@64d2d351]" name="login" duration-ms="22144" started-at="2019-07-18T18:37:39Z" finished-at="2019-07-18T18:38:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="logger()[pri:0, instance:Salesforce.sdfc.AutomationTest@64d2d351]" name="logger" is-config="true" duration-ms="863" started-at="2019-07-18T18:38:01Z" finished-at="2019-07-18T18:38:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logger -->
+      </class> <!-- Salesforce.sdfc.AutomationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
