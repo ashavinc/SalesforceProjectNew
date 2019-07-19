@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Salesforce.sdfc.AutomationTest">
+        <methods>
+          <include name="tc_16"/>
+          <include name="tc_38"/>
+          <include name="tc_31"/>
+          <include name="tc_10"/>
+          <include name="tc_32"/>
+          <include name="tc_30"/>
+          <include name="tc_19"/>
+          <include name="tc_13"/>
+          <include name="tc_35"/>
+          <include name="tc_14"/>
+          <include name="tc_36"/>
+          <include name="tc_11"/>
+          <include name="tc_33"/>
+          <include name="tc_12"/>
+          <include name="tc_34"/>
+          <include name="tc_17"/>
+          <include name="tc_18"/>
+          <include name="tc_15"/>
+          <include name="tc_37"/>
+          <include name="tc_27"/>
+          <include name="tc_20"/>
+          <include name="tc_21"/>
+          <include name="tc_24"/>
+          <include name="tc_25"/>
+          <include name="tc_22"/>
+          <include name="tc_23"/>
+          <include name="tc_06"/>
+          <include name="tc_28"/>
+          <include name="logger"/>
+          <include name="tc_07"/>
+          <include name="tc_29"/>
+          <include name="tc_26"/>
+        </methods>
+      </class> <!-- Salesforce.sdfc.AutomationTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

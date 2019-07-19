@@ -2,6 +2,7 @@ package Salesforce.sdfc;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -97,6 +98,73 @@ public class reusableFunctions {
 			logger.log(LogStatus.FAIL, objname+" is not displayed, please check the application");
 		}
 	}
-	
+
+	public static void selectusingtext(WebElement obj,String text,String objname)
+	{
+		if(obj.isDisplayed()) {
+			if(obj.isSelected()) {
+				System.out.println("Pass: "+objname+" is already selected");
+			}
+			else
+			{
+				Select view = new Select(obj);
+				view.selectByVisibleText("text");
+				System.out.println("Pass: "+ objname +" is selected");
+			logger.log(LogStatus.PASS, objname+" is selected");
+			}
+		}
+		else
+		{
+			System.out.println("Fail: "+ objname+ "is not present, please check the application");
+			logger.log(LogStatus.FAIL, objname+" is not displayed, please check the application");
+		}
+		
+	}
+public static void Selectdropdown(WebElement obj, String objname)
+{
+	if(obj.isDisplayed()) {
+		if(obj.isSelected()) {
+			System.out.println("Pass: "+objname+" is already selected");
+		}
+		else
+		{
+		obj.click();
+		System.out.println("Pass: "+ objname +" is selected");
+		logger.log(LogStatus.PASS, objname+" is selected");
+		}
+	}
+	else
+	{
+		System.out.println("Fail: "+ objname+ "is not present, please check the application");
+		logger.log(LogStatus.FAIL, objname+" is not displayed, please check the application");
+	}
+}
+
+public static void switchFrame(WebDriver driver, WebElement obj)
+{
+	if(obj.isDisplayed()) {
+		driver.switchTo().frame(obj);
+		System.out.println("Pass: We can switch to"+ obj +" frame");
+		logger.log(LogStatus.PASS, "Switch to frame");
+	}
+	else
+	{
+		System.out.println("Fail: We cannot switch to "+ obj + " frame ");
+		logger.log(LogStatus.FAIL, "Cannot switch to frame");
+
+	}
+}
+public static void switchFrameId(WebDriver driver, WebElement obj) {
+	driver.switchTo().frame(obj);
+	System.out.println("Pass: We can switch to"+ obj +" frame");
+	logger.log(LogStatus.PASS, "Switch to frame");
+}
+
+public static void switchdefaultFrame(WebDriver driver) {
+	driver.switchTo().defaultContent();
+	System.out.println("Pass: We can switch "+driver+" back to frame");
+	logger.log(LogStatus.PASS, "Switch back to the frame");
+}
+
 
 }
