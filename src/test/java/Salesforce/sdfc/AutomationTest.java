@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.*;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.*;
@@ -27,6 +27,8 @@ public class AutomationTest extends reusableFunctions {
 //		TC3_CheckRememberme();
 //		
 //	}
+	
+	
 	
 	
 	@AfterClass
@@ -50,54 +52,53 @@ public class AutomationTest extends reusableFunctions {
 		driver.manage().window().maximize();
 		System.out.println("Salesforce application opened");
 	}
+//	@Test (priority=1)
+//	public static void login() throws InterruptedException {
+//		
+//		CreateTestScriptReport("login");
+//		launchUrl();
+//		Thread.sleep(3000);
+//		WebElement username=driver.findElement(By.id("username"));
+//		enterText(username,"marydeenaasha80-wfks@force.com","UserName");
+//		Thread.sleep(3000);
+//		WebElement password=driver.findElement(By.id("password"));
+//		enterText(password,"salesforce1","Password");
+//		Thread.sleep(3000);
+//		WebElement login=driver.findElement(By.id("Login"));
+//		clickObj(login, "Login");
+//		driver.close();
+//	}
+//	@Test 
+//	public static void TC2_loginError() throws IOException, InterruptedException{
+//		CreateTestScriptReport("TC2_loginError");
+//		launchUrl();
+//		Thread.sleep(3000);
+//		WebElement username=driver.findElement(By.id("username"));
+//		enterText(username,"marydeenaasha80-wfks@force.com","UserName");
+//		Thread.sleep(3000);
+//		WebElement login=driver.findElement(By.id("Login"));
+//		clickObj(login, "Login");
+//		driver.close();
+//		System.out.println("TC2_loginError is completed");
+//
+//	}
+//	@Test 
+//	public static void TC1_login() throws IOException, InterruptedException{
+//		CreateTestScriptReport("TC1_login");
+//		launchUrl();
+//		WebElement username=driver.findElement(By.id("username"));
+//		enterText(username,"marydeenaasha80-wfks@force.com","UserName");
+//		WebElement password=driver.findElement(By.id("password"));
+//		password.clear();
+//		enterText(password,"salesforce1","Password");
+//		WebElement login=driver.findElement(By.id("Login"));
+//		clickObj(login, "Login");
+//		
+//		System.out.println("TC1_login is completed");
+//
+//	}
+
 	@Test (priority=1)
-	public static void login() throws InterruptedException {
-		
-		CreateTestScriptReport("login");
-		launchUrl();
-		Thread.sleep(3000);
-		WebElement username=driver.findElement(By.id("username"));
-		enterText(username,"marydeenaasha80-wfks@force.com","UserName");
-		Thread.sleep(3000);
-		WebElement password=driver.findElement(By.id("password"));
-		enterText(password,"salesforce1","Password");
-		Thread.sleep(3000);
-		WebElement login=driver.findElement(By.id("Login"));
-		clickObj(login, "Login");
-		driver.close();
-	}
-	@Test 
-	public static void TC2_loginError() throws IOException, InterruptedException{
-		CreateTestScriptReport("TC2_loginError");
-		launchUrl();
-		Thread.sleep(3000);
-		WebElement username=driver.findElement(By.id("username"));
-		enterText(username,"marydeenaasha80-wfks@force.com","UserName");
-		Thread.sleep(3000);
-		WebElement login=driver.findElement(By.id("Login"));
-		clickObj(login, "Login");
-		driver.close();
-		System.out.println("TC2_loginError is completed");
-
-	}
-	@Test 
-	public static void TC1_login() throws IOException, InterruptedException{
-		CreateTestScriptReport("TC1_login");
-		launchUrl();
-		WebElement username=driver.findElement(By.id("username"));
-		enterText(username,"marydeenaasha80-wfks@force.com","UserName");
-		WebElement password=driver.findElement(By.id("password"));
-		password.clear();
-		enterText(password,"salesforce1","Password");
-		WebElement login=driver.findElement(By.id("Login"));
-		clickObj(login, "Login");
-		
-		driver.close();
-		System.out.println("TC1_login is completed");
-
-	}
-
-	@Test 
 	public static void TC3_CheckRememberme() throws IOException, InterruptedException{
 		CreateTestScriptReport("TC3_CheckRememberme");
 		launchUrl();
@@ -118,7 +119,7 @@ public class AutomationTest extends reusableFunctions {
 
 	}
 
-	@Test 
+	@Test (priority=2)
 	public static void tc_06() throws InterruptedException {
 	//to select myprofile
 		
@@ -195,25 +196,25 @@ public class AutomationTest extends reusableFunctions {
 	share.click();
 	Thread.sleep(5000);
 	
-	WebElement photoupload=driver.findElement(By.xpath("//span[@id='displayBadge']"));
-	photoupload.click();
-	driver.switchTo().frame("uploadPhotoContentId");
-	Thread.sleep(5000);
-
-	
-	WebElement choosepicfile=driver.findElement(By.xpath("//input[@id='j_id0:uploadFileForm:uploadInputFile']"));
-	choosepicfile.sendKeys("C:\\Users\\Vincent Mari\\140.jpg");
-    Thread.sleep(5000);
+//	WebElement photoupload=driver.findElement(By.xpath("//span[@id='displayBadge']"));
+//	photoupload.click();
+//	driver.switchTo().frame("uploadPhotoContentId");
+//	Thread.sleep(5000);
+//
+//	
+//	WebElement choosepicfile=driver.findElement(By.xpath("//input[@id='j_id0:uploadFileForm:uploadInputFile']"));
+//	choosepicfile.sendKeys("C:\\Users\\Vincent Mari\\140.jpg");
+//    Thread.sleep(5000);
 		
 //  Runtime.getRuntime().exec("C:\\Users\\Vincent Mari\\AutoIt\\ImageUpload.exe");		
 //   Thread.sleep(5000);
 //
-    WebElement savephoto=driver.findElement(By.xpath("//input[@id='j_id0:j_id7:save']"));
-    savephoto.click();
-    Thread.sleep(3000);
+//    WebElement savephoto=driver.findElement(By.xpath("//input[@id='j_id0:j_id7:save']"));
+//    savephoto.click();
+//    Thread.sleep(3000);
 	}
 
-    @Test
+    @Test(priority=3)
     public static void tc_07() throws InterruptedException{
 	
     WebElement mousehover2=driver.findElement(By.id("userNavButton"));
@@ -240,20 +241,16 @@ public class AutomationTest extends reusableFunctions {
 	WebElement displaylayout=driver.findElement(By.xpath("//div[@id='DisplayAndLayout']//a[@class='header setupFolder']"));
 	displaylayout.click();
 	
-	WebElement mytabs=driver.findElement(By.xpath("//a[@id='CustomizeTabs_font']"));
+	WebElement mytabs=driver.findElement(By.xpath("//span[@id='CustomizeTabs_font']"));
 	mytabs.click();
 	
-	
-	WebElement customApp=driver.findElement(By.xpath("//select[@id='p4']"));
-	Select chatter=new Select(customApp);
-	chatter.selectByValue("02u4P0000017iUY");
-	Thread.sleep(5000);
-	
-	WebElement availableTabs=driver.findElement(By.xpath("//select[@id='duel_select_0']"));
-	Select reportselect=new Select(availableTabs);
-	reportselect.selectByValue("report");
-	Thread.sleep(5000);
-	
+	WebElement Sales = driver.findElement(By.xpath("//option[@value='02u1U000000yCWC']"));
+	//SelectByValue(Sales, "Sales");
+	clickObj(Sales, "Sales");
+	Thread.sleep(3000);
+	WebElement rep = driver.findElement(By.xpath("//option[@value='report']"));
+	clickObj(rep, "Report");
+
 	
 	WebElement addarrow=driver.findElement(By.xpath("//img[@class='rightArrowIcon']"));
 	addarrow.click();
@@ -278,23 +275,32 @@ public class AutomationTest extends reusableFunctions {
 	Thread.sleep(5000);
 	}
     
-    @Test
-    public static void tc_08() {
-//	
-//	WebElement mousehover3=driver.findElement(By.id("userNavButton"));
-//	Actions act3=new Actions(driver);
-//	act3.moveToElement(mousehover2).build().perform();
-//	mousehover3.click();
-//	Thread.sleep(5000);
-//	WebElement developerconsole=driver.findElement(By.xpath("//a[@class='debugLogLink menuButtonMenuLink']"));
-//	act3.moveToElement(developerconsole).build().perform();
-//	developerconsole.click();
-//	Thread.sleep(5000);
+    @Test (priority=4)
+    public static void tc_08() throws InterruptedException {
+	
+	WebElement mousehover3=driver.findElement(By.id("userNavButton"));
+	Actions act3=new Actions(driver);
+	act3.moveToElement(mousehover3).build().perform();
+	mousehover3.click();
+	Thread.sleep(5000);
+	WebElement developerconsole=driver.findElement(By.xpath("//a[@class='debugLogLink menuButtonMenuLink']"));
+	act3.moveToElement(developerconsole).build().perform();
+	developerconsole.click();
+	Thread.sleep(5000);
+	
+	//String oldWindow = driver.getWindowHandle();
+	
+	Set<String> getAllWindows = driver.getWindowHandles();
+	
+	String[] getWindow = getAllWindows.toArray(new String[getAllWindows.size()]);
+	Thread.sleep(3000);
+	driver.switchTo().window(getWindow[1]).close();
+	driver.close();
     }
 
-	
-	@Test
- public static void tc_09() {    
+//	
+//	@Test (priority=5)
+// public static void tc_09() {    
 //	WebElement mousehover4=driver.findElement(By.id("userNavButton"));
 //	Actions act4=new Actions(driver);
 //	act4.moveToElement(mousehover2).build().perform();
@@ -305,12 +311,13 @@ public class AutomationTest extends reusableFunctions {
 //	act4.moveToElement(logout).build().perform();
 //	logout.click();
 //	Thread.sleep(5000);
-	}
+	//}
 
 //--------------------------------------------------------------------------------------
 	
 	@Test
 	public static void tc_10() {
+		
 	WebElement Mousehover=driver.findElement(By.id("Account_Tab"));
 	Actions actn=new Actions(driver);
 	actn.moveToElement(Mousehover).build().perform();

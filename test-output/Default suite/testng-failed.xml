@@ -31,10 +31,8 @@
           <include name="tc_25"/>
           <include name="tc_22"/>
           <include name="tc_23"/>
-          <include name="tc_06"/>
           <include name="tc_28"/>
           <include name="logger"/>
-          <include name="tc_07"/>
           <include name="tc_29"/>
           <include name="tc_26"/>
         </methods>
